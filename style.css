@@ -2,6 +2,9 @@
   box-sizing: border-box;
 }
 
+body {
+  background: linear-gradient(to right, #EBE76C, #ED7B7B);
+}
 
 .search-container {
   display: flex;
@@ -18,6 +21,13 @@
 input {
   width: 300px;
   padding: 10px;
+  background-color: #836096;
+  color: white;
+  border: none;
+}
+
+input::placeholder {
+  color: white;
 }
 
 .suggestions {
@@ -28,6 +38,9 @@ input {
   align-items: center;
   justify-content: flex-start;
   max-height: 200px;
+  color: white;
+  background-color: #a87fbe;
+  /* width: 300px; */
 }
 
 ul {
@@ -46,5 +59,5 @@ li:hover {
 }
 
 input:focus {
-  border-color: red;
+  outline-color: #ED7B7B;
 }
