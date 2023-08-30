@@ -14,9 +14,7 @@ function search(newStr) {
 function searchHandler(e) {
 	const inputVal = e.target.value;
 	const newStr = str + inputVal;
-	console.log(newStr.toLowerCase());
 	results = search(newStr.toLowerCase());
-	console.log(results);
 	if (inputVal.trim() === '') {
 		suggestions.innerHTML = '';
 	}
@@ -37,7 +35,6 @@ function showSuggestions(results, maxItems, inputVal) {
 }
 
 function useSuggestion(e) {
-	console.log(e.target.parentElement)
 	if (e.target.parentElement === suggestions) {
 		input.value = e.target.innerText;
 		suggestions.innerHTML = '';
