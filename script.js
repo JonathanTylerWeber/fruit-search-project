@@ -21,7 +21,6 @@ function searchHandler(e) {
 	else {
 		showSuggestions(results, 5);
 	}
-	return results;
 }
 
 function showSuggestions(results, maxItems, inputVal) {
